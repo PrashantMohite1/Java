@@ -110,6 +110,51 @@ public class ThirdClass  {
 
 
 
+******************************* pom.xml *********************************************************************************
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>DnsValidation_apis</groupId>
+  <artifactId>DnsValidation_apis</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+	<dependency>
+	    <groupId>software.amazon.awssdk</groupId>
+	    <artifactId>route53</artifactId>
+	    <version>2.17.98</version> <!-- Use the latest version available -->
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/dnsjava/dnsjava -->
+	<dependency>
+	    <groupId>dnsjava</groupId>
+	    <artifactId>dnsjava</artifactId>
+	    <version>3.5.3</version>
+	</dependency>
+	<dependency>
+		<groupId>com.celeritio</groupId>
+		<artifactId>ds-adaptor</artifactId>
+		<version>1.0.1-SNAPSHOT</version>
+	</dependency>
+  </dependencies>
+  
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+
+
+
 
 
 
