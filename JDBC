@@ -1,92 +1,92 @@
 5 steps in jdbc 
 
-1. Load and Register the JDBC Driver:
-
-      java
-      Copy code
-      Class.forName("com.mysql.cj.jdbc.Driver");
-      This line loads the JDBC driver for your database. The driver is a software component that allows Java applications to interact with the database. Different databases require different drivers, and you need to load the appropriate driver for the database you're using.
-
-
-
-2. Establish a Connection to the Database:
-
-
-      String url = "jdbc:mysql://localhost:3306/your_database";
-      String username = "your_username";
-      String password = "your_password";
-      Connection connection = DriverManager.getConnection(url, username, password);
+      1. Load and Register the JDBC Driver:
+      
+            java
+            Copy code
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            This line loads the JDBC driver for your database. The driver is a software component that allows Java applications to interact with the database. Different databases require different drivers, and you need to load the appropriate driver for the database you're using.
       
       
-      **Purpose:**
-      Establishing a connection to the database is the first and crucial step in interacting with any database. The connection object (`Connection`) represents a physical connection to the database server. It's required for creating statements and executing queries.
       
-      - **Connection URL (`url`):** Specifies the location and properties of the database. In this example, it's a MySQL database running locally on the default port (3306). You need to adjust this URL based on your database type, location, and configuration.
+      2. Establish a Connection to the Database:
       
-      - **Username and Password:** Provide the credentials required to authenticate and connect to the database.
-
-3. Create a Statement Object:
-
-      ```java
-      Statement statement = connection.createStatement();
-      ```
       
-      **Purpose:**
-      Once you have a connection, you need a way to send SQL queries to the database. The `Statement` object is used for this purpose. It represents a simple SQL statement and allows you to execute queries, updates, and other SQL commands.
+            String url = "jdbc:mysql://localhost:3306/your_database";
+            String username = "your_username";
+            String password = "your_password";
+            Connection connection = DriverManager.getConnection(url, username, password);
+            
+            
+            **Purpose:**
+            Establishing a connection to the database is the first and crucial step in interacting with any database. The connection object (`Connection`) represents a physical connection to the database server. It's required for creating statements and executing queries.
+            
+            - **Connection URL (`url`):** Specifies the location and properties of the database. In this example, it's a MySQL database running locally on the default port (3306). You need to adjust this URL based on your database type, location, and configuration.
+            
+            - **Username and Password:** Provide the credentials required to authenticate and connect to the database.
       
-      - **Types of Statements:** There are different types of statements, such as `Statement`, `PreparedStatement`, and `CallableStatement`. In this example, a general `Statement` is used. However, for more complex scenarios and better performance, you might use `PreparedStatement` to execute parameterized queries.
-
-4. Execute SQL Queries:
-    
-    ```java
-    String query = "SELECT * FROM your_table";
-    ResultSet resultSet = statement.executeQuery(query);
-    ```
-    
-    **Purpose:**
-    Executing SQL queries allows you to interact with the data stored in the database.
-    
-    - **SQL Query (`query`):** Represents the SQL command you want to execute. In this case, it's a simple SELECT statement to retrieve all rows from a table (`your_table`). You can modify the query to perform various operations like SELECT, INSERT, UPDATE, or DELETE.
-    
-    - **ResultSet:** The result of a SELECT query is returned as a `ResultSet`. It represents a table of data resulting from a query. You can iterate over the `ResultSet` to retrieve and process the data.
-
-5. close the opened connections 
-      conn.close();
-
-
-
-
-
-Once you have a connection, you need a way to send SQL queries to the database. The `Statement` object is used for this purpose. It represents a simple SQL statement and allows you to execute queries, updates, and other SQL commands.
-In JDBC There are two main types of statements: Statement and PreparedStatement.
-
-1. Statement:
-
-A Statement object is used to execute a simple SQL statement without any parameters. It is generally used for executing static SQL queries.
-Statements can be prone to SQL injection attacks if not used carefully, as they often involve concatenating user inputs directly into the SQL query.
+      3. Create a Statement Object:
       
-      example
+            ```java
             Statement statement = connection.createStatement();
-            String sqlQuery = "SELECT * FROM employees WHERE department='IT'";
-            ResultSet resultSet = statement.executeQuery(sqlQuery);
+            ```
+            
+            **Purpose:**
+            Once you have a connection, you need a way to send SQL queries to the database. The `Statement` object is used for this purpose. It represents a simple SQL statement and allows you to execute queries, updates, and other SQL commands.
+            
+            - **Types of Statements:** There are different types of statements, such as `Statement`, `PreparedStatement`, and `CallableStatement`. In this example, a general `Statement` is used. However, for more complex scenarios and better performance, you might use `PreparedStatement` to execute parameterized queries.
+      
+      4. Execute SQL Queries:
+          
+          ```java
+          String query = "SELECT * FROM your_table";
+          ResultSet resultSet = statement.executeQuery(query);
+          ```
+          
+          **Purpose:**
+          Executing SQL queries allows you to interact with the data stored in the database.
+          
+          - **SQL Query (`query`):** Represents the SQL command you want to execute. In this case, it's a simple SELECT statement to retrieve all rows from a table (`your_table`). You can modify the query to perform various operations like SELECT, INSERT, UPDATE, or DELETE.
+          
+          - **ResultSet:** The result of a SELECT query is returned as a `ResultSet`. It represents a table of data resulting from a query. You can iterate over the `ResultSet` to retrieve and process the data.
+      
+      5. close the opened connections 
+            conn.close();
 
-2. PreparedStatement:
 
-A PreparedStatement is a subclass of Statement and is used to execute precompiled SQL queries. It allows the use of placeholders (parameters) in the SQL query, making it more secure and efficient, especially when the same query is executed multiple times with different parameter values.
-PreparedStatement helps prevent SQL injection by automatically escaping and quoting parameter values.
-     
-      Example:
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM employees WHERE department=?");
-            preparedStatement.setString(1, "IT");
-            ResultSet resultSet = preparedStatement.executeQuery();
+
+statement and prepare statement :- 
+
+      Once you have a connection, you need a way to send SQL queries to the database. The `Statement` object is used for this purpose. It represents a simple SQL statement and allows you to execute queries, updates, and other SQL commands.
+      In JDBC There are two main types of statements: Statement and PreparedStatement.
+      
+      1. Statement:
+      
+      A Statement object is used to execute a simple SQL statement without any parameters. It is generally used for executing static SQL queries.
+      Statements can be prone to SQL injection attacks if not used carefully, as they often involve concatenating user inputs directly into the SQL query.
+            
+            example
+                  Statement statement = connection.createStatement();
+                  String sqlQuery = "SELECT * FROM employees WHERE department='IT'";
+                  ResultSet resultSet = statement.executeQuery(sqlQuery);
+      
+      2. PreparedStatement:
+      
+      A PreparedStatement is a subclass of Statement and is used to execute precompiled SQL queries. It allows the use of placeholders (parameters) in the SQL query, making it more secure and efficient, especially when the same query is executed multiple times with different parameter values.
+      PreparedStatement helps prevent SQL injection by automatically escaping and quoting parameter values.
+           
+            Example:
+                  PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM employees WHERE department=?");
+                  preparedStatement.setString(1, "IT");
+                  ResultSet resultSet = preparedStatement.executeQuery();
 
 
 
 what is resultset ? 
 
-In JDBC (Java Database Connectivity), a ResultSet is an object that represents the result set of a database query. When you execute a SQL query using a Statement or PreparedStatement, the database returns a set of data as a result. This set of data is encapsulated in a ResultSet object.
-
-The main purpose of a ResultSet is to provide methods for retrieving and processing the data returned by a database query. It allows you to iterate over the rows of the result set and retrieve values from each column of the current row.
+      In JDBC (Java Database Connectivity), a ResultSet is an object that represents the result set of a database query. When you execute a SQL query using a Statement or PreparedStatement, the database returns a set of data as a result. This set of data is encapsulated in a ResultSet object.
+      
+      The main purpose of a ResultSet is to provide methods for retrieving and processing the data returned by a database query. It allows you to iterate over the rows of the result set and retrieve values from each column of the current row.
 
 
 
