@@ -52,3 +52,44 @@
 
 5. close the opened connections 
       conn.close();
+
+
+
+
+
+Once you have a connection, you need a way to send SQL queries to the database. The `Statement` object is used for this purpose. It represents a simple SQL statement and allows you to execute queries, updates, and other SQL commands.
+In JDBC There are two main types of statements: Statement and PreparedStatement.
+
+1. Statement:
+
+A Statement object is used to execute a simple SQL statement without any parameters. It is generally used for executing static SQL queries.
+Statements can be prone to SQL injection attacks if not used carefully, as they often involve concatenating user inputs directly into the SQL query.
+      
+      example
+            Statement statement = connection.createStatement();
+            String sqlQuery = "SELECT * FROM employees WHERE department='IT'";
+            ResultSet resultSet = statement.executeQuery(sqlQuery);
+
+2. PreparedStatement:
+
+A PreparedStatement is a subclass of Statement and is used to execute precompiled SQL queries. It allows the use of placeholders (parameters) in the SQL query, making it more secure and efficient, especially when the same query is executed multiple times with different parameter values.
+PreparedStatement helps prevent SQL injection by automatically escaping and quoting parameter values.
+     
+      Example:
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM employees WHERE department=?");
+            preparedStatement.setString(1, "IT");
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+
+
+what is resultset ? 
+
+In JDBC (Java Database Connectivity), a ResultSet is an object that represents the result set of a database query. When you execute a SQL query using a Statement or PreparedStatement, the database returns a set of data as a result. This set of data is encapsulated in a ResultSet object.
+
+The main purpose of a ResultSet is to provide methods for retrieving and processing the data returned by a database query. It allows you to iterate over the rows of the result set and retrieve values from each column of the current row.
+
+
+
+
+
+
