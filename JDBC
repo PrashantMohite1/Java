@@ -100,6 +100,23 @@ what is resultset ?
       The main purpose of a ResultSet is to provide methods for retrieving and processing the data returned by a database query. It allows you to iterate over the rows of the result set and retrieve values from each column of the current row.
 
 
+example code for resultset 
+```
+        String query = "select * from movies";
+        
+        stm.execute(query);
+        
+        ResultSet rs = stm.executeQuery(query);
+        
+        while (rs.next()) {
+        	System.out.println("movies :- "+rs.getString(1));
+        	System.out.println("year of release :- "+rs.getInt(2));
+        	System.out.println("box-office-collection :- "+rs.getInt(3));     	
+        }
+
+```
+
+
 
 
 
