@@ -82,6 +82,17 @@ statement and prepare statement :-
 
 
 
+Methods of PreparedStatement:
+
+setInt(int, int): This method can be used to set integer value at the given parameter index.
+setString(int, string): This method can be used to set string value at the given parameter index.
+setFloat(int, float): This method can be used to set float value at the given parameter index.
+setDouble(int, double): This method can be used to set a double value at the given parameter index.
+executeUpdate(): This method can be used to create, drop, insert, update, delete etc. It returns int type.
+executeQuery(): It returns an instance of ResultSet when a select query is executed.
+
+
+
 what is resultset ? 
 
       In JDBC (Java Database Connectivity), a ResultSet is an object that represents the result set of a database query. When you execute a SQL query using a Statement or PreparedStatement, the database returns a set of data as a result. This set of data is encapsulated in a ResultSet object.
