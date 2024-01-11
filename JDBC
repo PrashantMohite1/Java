@@ -102,13 +102,17 @@ what is resultset ?
 
 example code for resultset 
 ```
-        String query = "select * from movies";
+      Connection conn = DriverManager.getConnection(url,uname,pass);
+	    
+      Statement stm = conn.createStatement();
+
+      String query = "select * from movies";
         
-        stm.execute(query);
+      stm.execute(query);
         
-        ResultSet rs = stm.executeQuery(query);
+      ResultSet rs = stm.executeQuery(query);
         
-        while (rs.next()) {
+      while (rs.next()) {
         	System.out.println("movies :- "+rs.getString(1));
         	System.out.println("year of release :- "+rs.getInt(2));
         	System.out.println("box-office-collection :- "+rs.getInt(3));     	
