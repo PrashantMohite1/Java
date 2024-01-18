@@ -3,7 +3,6 @@
       1. Load and Register the JDBC Driver:
       
             java
-            Copy code
             Class.forName("com.mysql.cj.jdbc.Driver");
             This line loads the JDBC driver for your database. The driver is a software component that allows Java applications to interact with the database. Different databases require different drivers, and you need to load the appropriate driver for the database you're using.
       
