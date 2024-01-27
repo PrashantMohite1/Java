@@ -1,0 +1,36 @@
+public void deleteRecordFromRoute53DNS(String domain) {
+    try {
+        BasicAWSCredentials awsCredentials = new BasicAWSCredentials(accessKeyId, secretAccessKey);
+
+        AmazonRoute53 route53Client = AmazonRoute53ClientBuilder.standard()
+                .withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
+                .withRegion("ap-south-1")
+                .build();
+
+        // Create a resource record set with the record to be deleted
+        ResourceRecord resourceRecord = new ResourceRecord().withValue(ipAddress);
+        ResourceRecordSet resourceRecordSet = new ResourceRecordSet()
+                .withName(domain)
+                .withType("A")
+                .withTTL(300L)
+                .withResourceRecords(resourceRecord);
+
+        // Create a change with DELETE action
+        Change change = new Change().withAction(ChangeAction.DELETE).withResourceRecordSet(resourceRecordSet);
+
+        // Create a change batch with the delete change
+        ChangeBatch changeBatch = new ChangeBatch().withChanges(change);
+
+        // Create a request with the change batch
+        ChangeResourceRecordSetsRequest changeRequest = new ChangeResourceRecordSetsRequest()
+                .withHostedZoneId(hosted_zone_id)
+                .withChangeBatch(changeBatch);
+
+        // Apply the change to delete the record
+        route53Client.changeResourceRecordSets(changeRequest);
+
+        log.debug("DNS record deleted successfully for " + domain);
+    } catch (Exception e) {
+        log.warn("[Failed to delete DNS record in Route 53 for domain {}]", domain, e);
+    }
+}
