@@ -1,5 +1,5 @@
 
-### Arrays
+# Arrays
 
 In an array, elements are stored in contiguous memory locations. This means that if you have an array of integers, and each integer takes up 4 bytes, the memory addresses for the elements are consecutive.
 
