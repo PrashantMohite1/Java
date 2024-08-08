@@ -87,6 +87,7 @@ studentNames[4] = "Eve";
 ```
 
 - **Why Array?**: Arrays offer fast access to elements via indices. Since you know the number of students, using an array is efficient.
+
   
 
 **Scenario 2: Storing a List of Student Grades**
@@ -111,6 +112,7 @@ studentGrades.add(90); // Grade for second student
   
 
 #### 2. **Storing Key-Value Pairs: HashMap vs. Array**
+
 
 **Scenario 3: Associating Student Names with Grades**
 
