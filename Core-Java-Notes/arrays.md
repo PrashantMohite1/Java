@@ -64,7 +64,9 @@ Understanding which data type to use is crucial in programming because it affect
 
 Let's say you're developing a school management system in Java. You need to keep track of students' names and grades. Here's how different data types and structures might fit this scenario:
 
+
 #### 1. **Storing Simple Values: Array vs. Linked List**
+
 
 **Scenario 1: Storing a List of Student Names**
 
@@ -85,6 +87,7 @@ studentNames[4] = "Eve";
 ```
 
 - **Why Array?**: Arrays offer fast access to elements via indices. Since you know the number of students, using an array is efficient.
+  
 
 **Scenario 2: Storing a List of Student Grades**
 
@@ -104,6 +107,8 @@ studentGrades.add(90); // Grade for second student
 ```
 
 - **Why Linked List?**: Linked lists allow efficient insertion and removal of elements without reallocating memory or shifting other elements.
+
+  
 
 #### 2. **Storing Key-Value Pairs: HashMap vs. Array**
 
@@ -126,6 +131,8 @@ int aliceGrade = studentGradesMap.get("Alice");
 ```
 
 - **Why HashMap?**: `HashMap` allows for efficient key-based lookups. This is useful when you need to quickly find a value associated with a specific key.
+
+  
 
 ### Summary
 
