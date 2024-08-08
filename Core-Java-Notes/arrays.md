@@ -1,4 +1,3 @@
-Yes, you've got the right idea! Let me clarify and expand on both patterns a bit more to make sure it’s clear.
 
 ### Arrays
 
