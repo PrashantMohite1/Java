@@ -12,8 +12,9 @@ if not found then complete program execution
 elif catch then also complete program excution this is behaviour of exception handling 
 
 #### if found exeception :- 
-to find at which line actually exception happend exception has mechanism in which for every every thread it create a stack memory and start adding methods in the form of stack frames in that stack
+to find at which line actually exception happend, exception has mechanism in which for every thread it create a stack memory and start adding methods in the form of stack frames in that stack.
 after successfull and or even after exception it removed all stack frame and return stack memory to computer
+
 but if exception found at that frame -: it stops adding content in stack becuause it found exception and after that it check any try catch for this exception then if it found not catch then it stop excution
 throw error and stop program remove all frames from stack.
 
