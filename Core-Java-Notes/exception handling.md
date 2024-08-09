@@ -1,6 +1,6 @@
 
 
-#runtime stack trace mechanism
+# runtime stack trace mechanism
 
 
 -   Each and every call performed in a thread is stored in the stack.
