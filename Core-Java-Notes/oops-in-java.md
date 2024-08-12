@@ -68,7 +68,11 @@ public class BankAccount {
 
 If you use `private` for the `balance` field and provide public methods to interact with it, the issues of direct manipulation and unintended side effects can be effectively mitigated. Here's how encapsulation with private fields and public methods helps avoid the problems outlined previously:
 
-### Example with Private Fields
+
+
+### How Private Fields Address Issues and solves above problem
+
+#### Example with Private Fields
 
 ```java
 public class BankAccount {
@@ -96,7 +100,7 @@ public class BankAccount {
 }
 ```
 
-### How Private Fields Address Issues and solves above problem
+
 
 **Direct Manipulation**
 
