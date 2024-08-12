@@ -13,6 +13,16 @@ In Java, there are 4 types of access specifiers:
 
 
 
+## brief explanation of the key OOP (Object-Oriented Programming) pillars in Java:
+
+1. **Encapsulation**: Bundles data (variables) and methods (functions) that operate on the data into a single unit or class, restricting direct access to some of the object’s components.
+
+2. **Inheritance**: Allows a new class (subclass) to inherit properties and behavior (methods) from an existing class (superclass), promoting code reuse.
+
+3. **Polymorphism**: Enables objects to be treated as instances of their parent class rather than their actual class, allowing for method overriding and dynamic method binding.
+
+4. **Abstraction**: Hides complex implementation details and shows only the necessary features of an object, often through abstract classes and interfaces.
+
 
 
 ## Encapsulation 
