@@ -7,8 +7,8 @@
 -   Each entry in the run-time stack is known as an activation record or stack frame.
 -   Each entry in the run-time stack is known as an activation record or stack frame.
 
-means if exception found then stop program execution flow this is thing it follows 
-if not found then complete program execution 
+means if exception found then stop program execution flow,
+if not found then complete program execution, 
 elif catch then also complete program excution this is behaviour of exception handling 
 
 #### if found exeception :- 
