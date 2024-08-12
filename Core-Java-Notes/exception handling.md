@@ -1,4 +1,4 @@
-
+e
 
 # runtime stack trace mechanism
 
@@ -21,7 +21,7 @@ throw error and stop program remove all frames from stack.
 if it not found exception - : it create a stack for a thread and start adding methods in the form of stack frames and after execution remove it one by one 
 
 conclusion:-
-when every it found exception then it stops adding a frames in that stacks and if catch not found it throws exception it simply removes all frames from stack.
+when it found exception then it stops adding a frames in that stacks and if catch not found it throws exception it simply removes all frames from stack.
 
 is this is behaviour execptions in java
 
