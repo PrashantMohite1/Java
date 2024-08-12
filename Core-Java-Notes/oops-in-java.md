@@ -24,6 +24,8 @@ In Java, there are 4 types of access specifiers:
 4. **Abstraction**: Hides complex implementation details and shows only the necessary features of an object, often through abstract classes and interfaces.
 
 
+---------------------------------------
+-----------------------------------
 
 ## Encapsulation 
 
