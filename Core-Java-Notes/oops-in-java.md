@@ -154,4 +154,140 @@ Abstraction can be achieved with either abstract classes or interfaces (which yo
 
 -    To use an abstract class, you have to inherit it from the base class. Here, you have to provide implementations for the abstract methods, else it will become an abstract class.
 
+Sure! Here are code samples for the two scenarios demonstrating abstraction in Java.
+
+### Scenario 1: Payment Processing System
+
+**With Abstraction:**
+
+1. **Define an Abstract Class for Payment Methods:**
+
+```java
+// Abstract class defining the abstraction
+public abstract class PaymentMethod {
+    // Abstract method to be implemented by subclasses
+    public abstract void processPayment(double amount);
+}
+```
+
+2. **Implement Concrete Payment Methods:**
+
+```java
+// Concrete implementation for Credit Card Payment
+public class CreditCardPayment extends PaymentMethod {
+    @Override
+    public void processPayment(double amount) {
+        System.out.println("Processing credit card payment of $" + amount);
+        // Implementation for processing credit card payment
+    }
+}
+
+// Concrete implementation for PayPal Payment
+public class PayPalPayment extends PaymentMethod {
+    @Override
+    public void processPayment(double amount) {
+        System.out.println("Processing PayPal payment of $" + amount);
+        // Implementation for processing PayPal payment
+    }
+}
+```
+
+3. **Use the Abstraction in Your Application:**
+
+```java
+public class PaymentProcessor {
+    private PaymentMethod paymentMethod;
+
+    public PaymentProcessor(PaymentMethod paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
+
+    public void makePayment(double amount) {
+        paymentMethod.processPayment(amount);
+    }
+}
+
+// Example usage
+public class Main {
+    public static void main(String[] args) {
+        PaymentMethod creditCard = new CreditCardPayment();
+        PaymentProcessor processor = new PaymentProcessor(creditCard);
+        processor.makePayment(100.0); // Processing credit card payment of $100.0
+
+        PaymentMethod payPal = new PayPalPayment();
+        processor = new PaymentProcessor(payPal);
+        processor.makePayment(200.0); // Processing PayPal payment of $200.0
+    }
+}
+```
+
+**Without Abstraction:**
+
+```java
+public class PaymentProcessor {
+    public void makeCreditCardPayment(double amount) {
+        System.out.println("Processing credit card payment of $" + amount);
+        // Implementation for processing credit card payment
+    }
+
+    public void makePayPalPayment(double amount) {
+        System.out.println("Processing PayPal payment of $" + amount);
+        // Implementation for processing PayPal payment
+    }
+}
+
+// Example usage
+public class Main {
+    public static void main(String[] args) {
+        PaymentProcessor processor = new PaymentProcessor();
+        processor.makeCreditCardPayment(100.0);
+        processor.makePayPalPayment(200.0);
+    }
+}
+    public void performAuthentication(String credentials) {
+        strategy.authenticate(credentials);
+    }
+}
+
+// Example usage
+public class Main {
+    public static void main(String[] args) {
+        AuthenticationStrategy usernamePasswordAuth = new UsernamePasswordAuth();
+        Authenticator authenticator = new Authenticator(usernamePasswordAuth);
+        authenticator.performAuthentication("user:password"); // Authenticating using username/password: user:password
+
+        AuthenticationStrategy biometricAuth = new BiometricAuth();
+        authenticator = new Authenticator(biometricAuth);
+        authenticator.performAuthentication("fingerprint"); // Authenticating using biometric data: fingerprint
+    }
+}
+```
+
+**Without Abstraction:**
+
+```java
+public class Authenticator {
+    public void authenticateWithUsernamePassword(String credentials) {
+        System.out.println("Authenticating using username/password: " + credentials);
+        // Implementation for username/password authentication
+    }
+
+    public void authenticateWithBiometric(String credentials) {
+        System.out.println("Authenticating using biometric data: " + credentials);
+        // Implementation for biometric authentication
+    }
+}
+
+// Example usage
+public class Main {
+    public static void main(String[] args) {
+        Authenticator authenticator = new Authenticator();
+        authenticator.authenticateWithUsernamePassword("user:password");
+        authenticator.authenticateWithBiometric("fingerprint");
+    }
+}
+```
+
+
+
 
