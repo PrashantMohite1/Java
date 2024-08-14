@@ -289,3 +289,11 @@ Abstraction is a fundamental concept in object-oriented programming that allows 
 2. **Encapsulate Change**: By abstracting the common functionality, you can change the internal implementation of a class without affecting the classes that use it.
 
 3. **Promote Reusability**: Abstraction allows you to define generic and reusable components. For example, adding new payment methods in the future becomes straightforward by extending the abstract class.
+
+
+====================================================================================================================
+
+## Polymorphism
+
+Method Overloading
+When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by changes in the number of arguments or/and a change in the type of arguments.
