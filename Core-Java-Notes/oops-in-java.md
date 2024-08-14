@@ -291,7 +291,8 @@ Abstraction is a fundamental concept in object-oriented programming that allows 
 3. **Promote Reusability**: Abstraction allows you to define generic and reusable components. For example, adding new payment methods in the future becomes straightforward by extending the abstract class.
 
 
-====================================================================================================================
+-------------------------------------------------------------------------
+---------------------------------------------------------------------------
 
 ## Polymorphism
 
