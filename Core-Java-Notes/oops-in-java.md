@@ -19,8 +19,7 @@ In Java, there are 4 types of access specifiers:
 
 2. **Inheritance**: Allows a new class (subclass) to inherit properties and behavior (methods) from an existing class (superclass), promoting code reuse.
 
-3. **Polymorphism**: The word polymorphism means having many forms.Polymorphism allows us to perform a single action in different ways. In other words, polymorphism allows you to define one interface and have multiple implementations.
-   We can perform polymorphism in java by method overloading and method overriding.
+3. **Polymorphism**: The word polymorphism means having many forms.Polymorphism allows us to perform a single action in different ways. We can perform polymorphism in java by method overloading and method overriding.
    
 5. **Abstraction**: Hides complex implementation details and shows only the necessary features of an object, often through abstract classes and interfaces.
 
