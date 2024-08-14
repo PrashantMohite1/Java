@@ -296,5 +296,5 @@ Abstraction is a fundamental concept in object-oriented programming that allows 
 
 ## Polymorphism
 
-Method Overloading
+### Method Overloading
 When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by changes in the number of arguments or/and a change in the type of arguments.
