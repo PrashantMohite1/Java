@@ -157,8 +157,10 @@ Abstraction can be achieved with either abstract classes or interfaces (which yo
 Sure! Here are code samples for the two scenarios demonstrating abstraction in Java.
 
 **we cant create object of abstract class because in abstract class we have only obstract method that we need to implement in child class or subclass. but we can create a object of subclass of abstract class**
-example 
+syntax to create object of `subclass of abstract class'
+```
 new abstract-class-name = new sub-class-name();
+```
 
 ### Scenario 1: Payment Processing System
 
