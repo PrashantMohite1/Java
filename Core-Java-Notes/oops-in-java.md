@@ -247,7 +247,7 @@ If you did not use abstraction in your program, you would have a direct dependen
     ```java
     public class Main {
         public static void main(String[] args) {
-            PaymentProcessor processor = new PaymentProcessor();
+            PaymentProcessor processor = new PaymentProcessor();      # syntax of object creation : - ClassName objectName = new ClassName();
             processor.processCreditCardPayment(100.0); // Processing credit card payment of $100.0
             processor.processPayPalPayment(200.0); // Processing PayPal payment of $200.0
         }
