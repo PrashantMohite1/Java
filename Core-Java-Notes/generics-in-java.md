@@ -77,8 +77,9 @@ public class GenericPrinter {
 
 Here, `printArray` is a generic method that can operate on arrays of any type. This allows you to use the same method for different types without writing overloaded versions.
 
+-----------------------------------------
 #### 3. **Generic Interfaces**
-
+-----------------------------------------
 **Example**: A generic interface `Comparable<T>` used to compare objects of type `T`.
 
 ```java
