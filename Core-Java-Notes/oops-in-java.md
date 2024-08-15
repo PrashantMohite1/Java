@@ -25,10 +25,10 @@ In Java, there are 4 types of access specifiers:
    
 
 
----------------------------------------
------------------------------------
 
+-----------------------------------
 ## Encapsulation 
+---------------------------------------
 
 Encapsulation refers to the practice of bundling the data (attributes) and methods (functions) that operate on the data into a single unit or class. It also involves restricting access to some of the object's components, which helps to prevent unintended interference and misuse.encapsulation uses private access modifier to hide the data and use getter and setter to provide controlled access to data.
 
@@ -144,11 +144,10 @@ public class BankAccount {
 
 
 
----------------------------------------------
+
 --------------------------------------------
-
 ## abstraction 
-
+---------------------------------------
 
 Data abstraction is the process of hiding certain details and showing only essential information to the user.
 Abstraction can be achieved with either abstract classes or interfaces.
