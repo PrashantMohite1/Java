@@ -302,6 +302,9 @@ In Java Polymorphism is mainly divided into two types:
 -   Compile-time Polymorphism - done by method overloading 
 -   Runtime Polymorphism - done by method overiding 
 
+
+![Alt text](https://github.com/PrashantMohite1/Java/blob/main/Java_Core_Images/OverridingVsOverloading.png)
+
 ### Method Overloading
 When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by changes in the number of arguments or/and a change in the type of arguments.
 
