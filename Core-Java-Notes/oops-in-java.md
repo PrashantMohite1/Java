@@ -150,7 +150,7 @@ public class BankAccount {
 
 
 Data abstraction is the process of hiding certain details and showing only essential information to the user.
-Abstraction can be achieved with either abstract classes or interfaces (which you will learn more about in the next chapter).
+Abstraction can be achieved with either abstract classes or interfaces.
 
 -    To use an abstract class, you have to inherit it from the base class. Here, you have to provide implementations for the abstract methods, else it will become an abstract class.
 
