@@ -298,6 +298,19 @@ Abstraction is a fundamental concept in object-oriented programming that allows 
 
 
 
+
+---------------------------------------------------------------------------
+## Inheritance
+-------------------------------------------------------------------------
+
+Java, Inheritance is the mechanism in Java by which one class is allowed to inherit the features(fields and methods) of another class. In Java, Inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class. In addition, you can add new fields and methods to your current class as well.  
+
+Types of Inheritance 
+1. **Single Inheritance** -: In single inheritance, a sub-class is derived from only one super class. It inherits the properties and behavior of a single-parent class.
+2. **Multilevel Inheritance** -: In Multilevel Inheritance, a child class will be inheriting a base class, and as well as the child class also acts as the base class for other classes.
+3. 
+   
+
 ---------------------------------------------------------------------------
 ## Polymorphism
 -------------------------------------------------------------------------
