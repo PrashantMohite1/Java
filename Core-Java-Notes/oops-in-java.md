@@ -337,6 +337,6 @@ A relationship in Java means different relations between two or more classes. Fo
 
 In Java, we have two types of relationship:
 
-Is-A relationship: Whenever one class inherits another class, it is called an IS-A relationship.
-Has-A relationship: Whenever an instance of one class is used in another class, it is called HAS-A relationship.
+-   Is-A relationship: Whenever one class inherits another class, it is called an IS-A relationship.
+-   Has-A relationship: Whenever an instance of one class is used in another class, it is called HAS-A relationship.
 
