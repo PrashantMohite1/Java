@@ -293,7 +293,7 @@ Abstraction is a fundamental concept in object-oriented programming that allows 
 
 ### difference between Interface and abstract class
 
-![alt text]https://github.com/PrashantMohite1/Java/blob/main/Java_Core_Images/interface-vs-abstract-class.png
+![alt text](https://github.com/PrashantMohite1/Java/blob/main/Java_Core_Images/interface-vs-abstract-class.png)
 
 
 -------------------------------------------------------------------------
