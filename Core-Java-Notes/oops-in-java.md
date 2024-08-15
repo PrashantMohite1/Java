@@ -316,3 +316,11 @@ When there are multiple functions with the same name but different parameters th
 ### Method overiding 
 -   In Java, Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes. When a method in a subclass has the same name, the same parameters or signature, and the same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
 
+### What is Is-A-Relationship in Java?
+A relationship in Java means different relations between two or more classes. For example, if a class Bulb inherits another class Device, then we can say that Bulb is having is-a relationship with Device, which implies Bulb is a device.  
+
+In Java, we have two types of relationship:
+
+Is-A relationship: Whenever one class inherits another class, it is called an IS-A relationship.
+Has-A relationship: Whenever an instance of one class is used in another class, it is called HAS-A relationship.
+
