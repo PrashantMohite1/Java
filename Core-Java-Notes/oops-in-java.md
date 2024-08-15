@@ -17,11 +17,12 @@ In Java, there are 4 types of access specifiers:
 
 1. **Encapsulation**: Bundles data (variables) and methods (functions) that operate on the data into a single unit or class, restricting direct access to some of the object’s components.
 
-2. **Inheritance**: Allows a new class (subclass) to inherit properties and behavior (methods) from an existing class (superclass), promoting code reuse.
+2. **Abstraction**: Hides complex implementation details and shows only the necessary features of an object, often through abstract classes and interfaces.
 
-3. **Polymorphism**: The word polymorphism means having many forms.Polymorphism allows us to perform a single action in different ways. We can perform polymorphism in java by method overloading and method overriding.
+3. **Inheritance**: Allows a new class (subclass) to inherit properties and behavior (methods) from an existing class (superclass), promoting code reuse.
+
+4. **Polymorphism**: The word polymorphism means having many forms.Polymorphism allows us to perform a single action in different ways. We can perform polymorphism in java by method overloading and method overriding.
    
-5. **Abstraction**: Hides complex implementation details and shows only the necessary features of an object, often through abstract classes and interfaces.
 
 
 ---------------------------------------
