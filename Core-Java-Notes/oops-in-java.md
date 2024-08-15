@@ -297,10 +297,10 @@ Abstraction is a fundamental concept in object-oriented programming that allows 
 ![alt text](https://github.com/PrashantMohite1/Java/blob/main/Java_Core_Images/interface-vs-abstract-class.png)
 
 
--------------------------------------------------------------------------
----------------------------------------------------------------------------
 
+---------------------------------------------------------------------------
 ## Polymorphism
+-------------------------------------------------------------------------
 Polymorphism allows us to perform a single action in different ways. In other words, polymorphism allows you to define one interface and have multiple implementations. The word “poly” means many and “morphs” means forms, So it means many forms.
 
 In Java Polymorphism is mainly divided into two types: 
