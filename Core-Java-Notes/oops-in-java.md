@@ -341,10 +341,9 @@ In Java, we have two types of relationship:
 -   Has-A relationship: Whenever an instance of one class is used in another class, it is called HAS-A relationship.
 
 
-
+---
 ### difference between Inheritance and polymorphism 
 
-# Inheritance vs. Polymorphism
 
 | S.NO | Inheritance                                                                 | Polymorphism                                                                                       |
 |------|------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
