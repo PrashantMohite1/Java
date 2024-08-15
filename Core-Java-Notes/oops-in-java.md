@@ -340,3 +340,18 @@ In Java, we have two types of relationship:
 -   Is-A relationship: Whenever one class inherits another class, it is called an IS-A relationship.
 -   Has-A relationship: Whenever an instance of one class is used in another class, it is called HAS-A relationship.
 
+
+
+### difference between Inheritance and polymorphism 
+
+# Inheritance vs. Polymorphism
+
+| S.NO | Inheritance                                                                 | Polymorphism                                                                                       |
+|------|------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| 1    | Inheritance is when a new class (derived class) is created that inherits features from an existing class (base class). | Polymorphism refers to the ability to define multiple forms for a function or method.              |
+| 2    | It is primarily applied to classes.                                          | It is primarily applied to functions or methods.                                                   |
+| 3    | Inheritance supports reusability and reduces code length in object-oriented programming. | Polymorphism allows objects to decide which form of the function to use at compile-time (overloading) or run-time (overriding). |
+| 4    | Inheritance can be single, hybrid, multiple, hierarchical, and multilevel.     | Polymorphism can be compile-time (overloading) or run-time (overriding).                           |
+| 5    | It is used in pattern design.                                                 | It is also used in pattern design.                                                                 |
+| 6    | **Example:** The class `Bike` can inherit from the class `TwoWheelVehicle`, which could itself be a subclass of `Vehicle`. | **Example:** The class `Bike` can have a method named `set_color()`, which changes the bike’s color based on the color name entered. |
+
