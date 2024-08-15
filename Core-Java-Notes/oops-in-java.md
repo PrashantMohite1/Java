@@ -295,6 +295,12 @@ Abstraction is a fundamental concept in object-oriented programming that allows 
 ---------------------------------------------------------------------------
 
 ## Polymorphism
+Polymorphism allows us to perform a single action in different ways. In other words, polymorphism allows you to define one interface and have multiple implementations. The word “poly” means many and “morphs” means forms, So it means many forms.
+
+In Java Polymorphism is mainly divided into two types: 
+
+-   Compile-time Polymorphism - done by method overloading 
+-   Runtime Polymorphism - done by method overiding 
 
 ### Method Overloading
 When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by changes in the number of arguments or/and a change in the type of arguments.
