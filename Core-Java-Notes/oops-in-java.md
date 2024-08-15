@@ -308,7 +308,8 @@ Types of Inheritance
 1. **Single Inheritance** -: In single inheritance, a sub-class is derived from only one super class. It inherits the properties and behavior of a single-parent class.
 2. **Multilevel Inheritance** -: In Multilevel Inheritance, a child class will be inheriting a base class, and as well as the child class also acts as the base class for other classes.
 3. **Hierarchical Inheritance** -: In Hierarchical Inheritance, one class serves as a superclass (base class) for more than one subclass(child class).
-4. **Hybrid Inheritance** -: Hybrid means consist of more than one. Hybrid inheritance is the combination of two or more types of inheritance.
+4. **Multiple Inheritance (Through Interfaces)** : - In Multiple inheritances, one class can have more than one superclass and inherit features from all parent classes. Please note that Java does not support multiple inheritances with classes. In Java, we can achieve multiple inheritances only through Interfaces. In the image below, Class C is derived from interfaces A and B.
+5. **Hybrid Inheritance** -: Hybrid means consist of more than one. Hybrid inheritance is the combination of two or more types of inheritance.
    
 
 ---------------------------------------------------------------------------
