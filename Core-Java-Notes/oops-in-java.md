@@ -311,6 +311,7 @@ Types of Inheritance
 4. **Multiple Inheritance (Through Interfaces)** : - In Multiple inheritances, one class can have more than one superclass and inherit features from all parent classes. Please note that Java does not support multiple inheritances with classes. In Java, we can achieve multiple inheritances only through Interfaces. In the image below, Class C is derived from interfaces A and B.
 5. **Hybrid Inheritance** -: Hybrid means consist of more than one. Hybrid inheritance is the combination of two or more types of inheritance.
    
+![alt text](https://github.com/PrashantMohite1/Java/blob/main/Java_Core_Images/inheritance-in-java.jpg)
 
 ---------------------------------------------------------------------------
 ## Polymorphism
