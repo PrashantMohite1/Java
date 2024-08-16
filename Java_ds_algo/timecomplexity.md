@@ -1,7 +1,13 @@
+![alt text](https://github.com/PrashantMohite1/Java/blob/main/Java_Core_Images/Time-complexity.jpg)
+
 
 # Time Complexity
 
 Time complexity is a way to measure how the time it takes for a computer to run a program or algorithm changes as the size of the input data increases. It helps us understand how well an algorithm performs as the amount of data it processes grows.
+
+basically how much operations are increased if we increased inputs. so we have time complexity graph which we use to measure time complexity where operation on Y axis and  Input on Y axis.
+
+
 
 1. **Constant Time (O(1))**
    - **What it means:** The time it takes to run the algorithm does not change with the size of the input.
