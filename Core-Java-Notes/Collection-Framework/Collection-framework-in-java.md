@@ -45,10 +45,10 @@ A linked list is a linear data structure that consists of a series of nodes conn
 Here’s the comparison of Linked List vs Arrays
 
 **Linked List**:
-Data Structure: Non-contiguous
-Memory Allocation: Typically allocated one by one to individual elements
-Insertion/Deletion: Efficient
-Access: Sequential
+-  Data Structure: Non-contiguous
+-  Memory Allocation: Typically allocated one by one to individual elements
+-  Insertion/Deletion: Efficient
+-  Access: Sequential
 
 **Array**:
 -  Data Structure: Contiguous
