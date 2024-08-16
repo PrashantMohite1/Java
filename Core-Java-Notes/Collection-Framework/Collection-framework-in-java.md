@@ -57,3 +57,10 @@ A linked list is a linear data structure that consists of a series of nodes conn
 | **Resizing**         | **Dynamic Resizing**: When the array becomes full, a new, larger array is created, and elements are copied over. This resizing operation can be costly, but it’s amortized over many insertions. | **No Resizing**: Since `LinkedList` does not use a contiguous block of memory, there is no need for resizing. Nodes are added or removed without affecting other nodes. |
 
 
+
+#### Stack 
+In stack, elements are stored and accessed in Last In First Out manner. That is, elements are added to the top of the stack and removed from the top of the stack.
+The Java collections framework has a class named Stack that provides the functionality of the stack data structure.The Stack class extends the Vector class.
+
+
+
