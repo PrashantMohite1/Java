@@ -25,11 +25,8 @@ The Collection interface includes various methods that can be used to perform di
 
 Since List is an interface, we cannot create objects from it.
 
-In order to use the functionalities of the List interface, we can use these classes:
-  ArrayList
-  LinkedList
-  Vector
-  Stack
+In order to use the functionalities of the List interface, we can use these classes: ArrayList, LinkedList, Vector, Stack
+
 
 
 
