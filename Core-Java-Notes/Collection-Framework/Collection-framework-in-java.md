@@ -63,4 +63,13 @@ In stack, elements are stored and accessed in Last In First Out manner. That is,
 The Java collections framework has a class named Stack that provides the functionality of the stack data structure.The Stack class extends the Vector class.
 
 
+#### Java Queues and Deques
+
+Java provides powerful and efficient data structures like queues and deques for developers. These ordered data structures allow efficient insertion, removal and access of elements. 
+
+Queues and deques are commonly used in programming for ordered data manipulation. But when should you use each one?
+
+Imagine you are building an app to take food orders at a restaurant. New orders are placed by customers continuously. The kitchen needs to view and process these orders in a strict first-come-first-served manner. A queue data structure is perfect for this ordering requirement.
+
+Now consider the app also needs to keep a history of all past orders for analytics. The history should maintain order of completion rather than order of placement. A deque can provide easy access to this historical data from both front and back.
 
