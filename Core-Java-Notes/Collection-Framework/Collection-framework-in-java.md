@@ -41,9 +41,6 @@ Growth Strategy: When the array becomes full (i.e., when the number of elements 
 What is a Linked List?
 A linked list is a linear data structure that consists of a series of nodes connected by pointers (in C or C++) or references (in Java, Python and JavaScript). Each node contains data and a pointer/reference to the next node in the list. Unlike arrays, linked lists allow for efficient insertion or removal of elements from any position in the list, as the nodes are not stored contiguously in memory.
 
-+-------+-------+--------+       +-------+-------+--------+       +-------+-------+--------+
-| Data  | Next  | Prev   |  <-->  | Data  | Next  | Prev   |  <-->  | Data  | Next  | Prev   |
-+-------+-------+--------+       +-------+-------+--------+       +-------+-------+--------+
 
 
 ##### Linked Lists vs Arrays
@@ -60,4 +57,11 @@ Here’s the comparison of Linked List vs Arrays
 -  Memory Allocation: Typically allocated to the whole array
 -  Insertion/Deletion: Inefficient
 -  Access: Random
+
+  | Feature              | `ArrayList`                                                         | `LinkedList`                                                       |
+|----------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
+| **Internal Structure** | **Backed by an Array**: Internally uses a dynamic array to store elements. <br> **Contiguous Memory**: Elements are stored in contiguous memory locations, which allows for fast index-based access. | **Backed by a Doubly Linked List**: Internally uses a doubly linked list where each element (node) contains a reference to both the next and the previous node. <br> **Non-contiguous Memory**: Elements are stored in non-contiguous memory locations. |
+| **Memory Usage**     | **Less Memory Overhead**: Requires less memory overhead because it uses a single array. The overhead is mainly due to the array's resizing mechanism. | **More Memory Overhead**: Requires more memory due to storing additional pointers (references) in each node (for both next and previous nodes). |
+| **Resizing**         | **Dynamic Resizing**: When the array becomes full, a new, larger array is created, and elements are copied over. This resizing operation can be costly, but it’s amortized over many insertions. | **No Resizing**: Since `LinkedList` does not use a contiguous block of memory, there is no need for resizing. Nodes are added or removed without affecting other nodes. |
+
 
