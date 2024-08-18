@@ -74,6 +74,10 @@ In this example, the stack helps keep track of previous text states, allowing th
 
 # queue and deque 
 
+The queue is an abstract data type or linear data structure from which elements can be inserted at the rear(back) of the queue and elements can be deleted from the front(head) of the queue.
+
+The double-ended queue is an abstract data type that generalizes a queue from which elements can be inserted or deleted either from both front(head) or rear(tail) ends.
+
 Certainly! Here’s how you can implement these use cases in Java:
 
 1. **Queue for Processing Orders**:
