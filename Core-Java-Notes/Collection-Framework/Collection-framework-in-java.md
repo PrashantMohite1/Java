@@ -66,13 +66,12 @@ The Java collections framework has a class named Stack that provides the functio
 ### Queue 
 The queue is an abstract data type or linear data structure from which elements can be inserted at the rear(back) of the queue and elements can be deleted from the front(head) of the queue.
 
-#### Java Queues and Deques
+#### Deque
+The double-ended queue is an abstract data type that generalizes a queue from which elements can be inserted or deleted either from both front(head) or rear(tail) ends.
 
-Java provides powerful and efficient data structures like queues and deques for developers. These ordered data structures allow efficient insertion, removal and access of elements. 
+**usecase**:- 
 
-Queues and deques are commonly used in programming for ordered data manipulation. But when should you use each one?
+- Imagine you are building an app to take food orders at a restaurant. New orders are placed by customers continuously. The kitchen needs to view and process these orders in a strict first-come-first-served manner. A queue data structure is perfect for this ordering requirement.
 
-Imagine you are building an app to take food orders at a restaurant. New orders are placed by customers continuously. The kitchen needs to view and process these orders in a strict first-come-first-served manner. A queue data structure is perfect for this ordering requirement.
-
-Now consider the app also needs to keep a history of all past orders for analytics. The history should maintain order of completion rather than order of placement. A deque can provide easy access to this historical data from both front and back.
+- Now consider the app also needs to keep a history of all past orders for analytics. The history should maintain order of completion rather than order of placement. A deque can provide easy access to this historical data from both front and back.
 
