@@ -63,6 +63,9 @@ In stack, elements are stored and accessed in Last In First Out manner. That is,
 The Java collections framework has a class named Stack that provides the functionality of the stack data structure.The Stack class extends the Vector class.
 
 
+### Queue 
+The queue is an abstract data type or linear data structure from which elements can be inserted at the rear(back) of the queue and elements can be deleted from the front(head) of the queue.
+
 #### Java Queues and Deques
 
 Java provides powerful and efficient data structures like queues and deques for developers. These ordered data structures allow efficient insertion, removal and access of elements. 
