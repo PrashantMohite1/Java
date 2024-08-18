@@ -74,60 +74,59 @@ In this example, the stack helps keep track of previous text states, allowing th
 
 # queue and deque 
 
-Sure! Here are some real-world use cases:
+Certainly! Here’s how you can implement these use cases in Java:
 
-1. **Queue**:
-   **Use Case**: Task Scheduling
-   **Example**: A job queue in a task scheduler where tasks are processed in the order they arrive.
+1. **Queue for Processing Orders**:
+   **Use Case**: Managing incoming food orders in the order they are received.
 
    ```java
    import java.util.LinkedList;
    import java.util.Queue;
 
-   public class TaskScheduler {
+   public class RestaurantOrderQueue {
        public static void main(String[] args) {
-           Queue<String> taskQueue = new LinkedList<>();
-           taskQueue.add("Task 1");
-           taskQueue.add("Task 2");
-           taskQueue.add("Task 3");
+           Queue<String> orderQueue = new LinkedList<>();
+           
+           // New orders
+           orderQueue.add("Order 1");
+           orderQueue.add("Order 2");
+           orderQueue.add("Order 3");
 
-           while (!taskQueue.isEmpty()) {
-               String task = taskQueue.poll();
-               System.out.println("Processing " + task);
+           // Processing orders
+           while (!orderQueue.isEmpty()) {
+               String order = orderQueue.poll();
+               System.out.println("Processing " + order);
            }
        }
    }
    ```
 
-2. **Deque**:
-   **Use Case**: Undo/Redo Functionality
-   **Example**: Managing undo and redo operations where you can push and pop actions.
+2. **Deque for Order History**:
+   **Use Case**: Keeping track of completed orders and allowing easy access to recent or oldest orders for analysis.
 
    ```java
    import java.util.ArrayDeque;
    import java.util.Deque;
 
-   public class UndoRedoManager {
+   public class OrderHistoryDeque {
        public static void main(String[] args) {
-           Deque<String> undoStack = new ArrayDeque<>();
-           Deque<String> redoStack = new ArrayDeque<>();
+           Deque<String> orderHistory = new ArrayDeque<>();
+           
+           // Completed orders
+           orderHistory.addFirst("Completed Order 1");
+           orderHistory.addFirst("Completed Order 2");
+           orderHistory.addFirst("Completed Order 3");
 
-           // Perform some actions
-           undoStack.push("Action 1");
-           undoStack.push("Action 2");
-           undoStack.push("Action 3");
+           // Access most recent order
+           System.out.println("Most recent order: " + orderHistory.peekFirst());
+           
+           // Access oldest order
+           System.out.println("Oldest order: " + orderHistory.peekLast());
 
-           // Undo action
-           String action = undoStack.pop();
-           redoStack.push(action);
-           System.out.println("Undone: " + action);
-
-           // Redo action
-           action = redoStack.pop();
-           undoStack.push(action);
-           System.out.println("Redone: " + action);
+           // Remove the most recent order
+           System.out.println("Removing: " + orderHistory.removeFirst());
        }
    }
    ```
 
-In these examples, a queue processes tasks in a first-in, first-out manner, while a deque allows for efficient addition and removal from both ends, useful for managing undo and redo operations.
+In the first example, `Queue` ensures that orders are processed in the exact sequence they are placed. In the second example, `Deque` allows adding completed orders to the front (most recent first) and provides methods to access or remove orders from either end for analytics.
