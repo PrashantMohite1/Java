@@ -70,3 +70,64 @@ public class TextEditor {
 - **`undo` Method**: When undoing, it retrieves the last saved state from the stack and restores it.
 
 In this example, the stack helps keep track of previous text states, allowing the user to undo recent changes efficiently.
+
+
+# queue and deque 
+
+Sure! Here are some real-world use cases:
+
+1. **Queue**:
+   **Use Case**: Task Scheduling
+   **Example**: A job queue in a task scheduler where tasks are processed in the order they arrive.
+
+   ```java
+   import java.util.LinkedList;
+   import java.util.Queue;
+
+   public class TaskScheduler {
+       public static void main(String[] args) {
+           Queue<String> taskQueue = new LinkedList<>();
+           taskQueue.add("Task 1");
+           taskQueue.add("Task 2");
+           taskQueue.add("Task 3");
+
+           while (!taskQueue.isEmpty()) {
+               String task = taskQueue.poll();
+               System.out.println("Processing " + task);
+           }
+       }
+   }
+   ```
+
+2. **Deque**:
+   **Use Case**: Undo/Redo Functionality
+   **Example**: Managing undo and redo operations where you can push and pop actions.
+
+   ```java
+   import java.util.ArrayDeque;
+   import java.util.Deque;
+
+   public class UndoRedoManager {
+       public static void main(String[] args) {
+           Deque<String> undoStack = new ArrayDeque<>();
+           Deque<String> redoStack = new ArrayDeque<>();
+
+           // Perform some actions
+           undoStack.push("Action 1");
+           undoStack.push("Action 2");
+           undoStack.push("Action 3");
+
+           // Undo action
+           String action = undoStack.pop();
+           redoStack.push(action);
+           System.out.println("Undone: " + action);
+
+           // Redo action
+           action = redoStack.pop();
+           undoStack.push(action);
+           System.out.println("Redone: " + action);
+       }
+   }
+   ```
+
+In these examples, a queue processes tasks in a first-in, first-out manner, while a deque allows for efficient addition and removal from both ends, useful for managing undo and redo operations.
