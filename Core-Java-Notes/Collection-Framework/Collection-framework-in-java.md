@@ -84,6 +84,9 @@ Enumerations or Java Enum serve the purpose of representing a group of named con
 
 **four types of Java Set implementations:**
 -  **EnumSet** :- EnumSet is a special type of Set designed specifically for dealing with enum values. Enums are like lists of named constants (e.g., days of the week, colors).
+-  **HashSet** :- HashSet is a general-purpose implementation of the Set interface that uses a hash table for storage.
+-  **LinkedHashSet**  :- LinkedHashSet is an implementation of the Set interface that combines the features of HashSet and a linked list.
+-  **Treeset** :- TreeSet is an implementation of the Set interface that is backed by a TreeMap
 
 
 
