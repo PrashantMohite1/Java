@@ -66,7 +66,7 @@ The Java collections framework has a class named Stack that provides the functio
 ### Queue 
 The queue is an abstract data type or linear data structure from which elements can be inserted at the rear(back) of the queue and elements can be deleted from the front(head) of the queue.
 
-#### Deque
+### Deque
 The double-ended queue is an abstract data type that generalizes a queue from which elements can be inserted or deleted either from both front(head) or rear(tail) ends.
 
 **usecase**:- 
@@ -74,4 +74,12 @@ The double-ended queue is an abstract data type that generalizes a queue from wh
 - Imagine you are building an app to take food orders at a restaurant. New orders are placed by customers continuously. The kitchen needs to view and process these orders in a strict first-come-first-served manner. A queue data structure is perfect for this ordering requirement.
 
 - Now consider the app also needs to keep a history of all past orders for analytics. The history should maintain order of completion rather than order of placement. A deque can provide easy access to this historical data from both front and back.
+- 
+
+### Set :- 
+It is an unordered collection of objects in which duplicate values cannot be stored. 
+
+**Enum**
+Enumerations or Java Enum serve the purpose of representing a group of named constants in a programming language.
+
 
