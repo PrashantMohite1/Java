@@ -82,4 +82,9 @@ It is an unordered collection of objects in which duplicate values cannot be sto
 **Enum**
 Enumerations or Java Enum serve the purpose of representing a group of named constants in a programming language.
 
+**four types of Java Set implementations:**
+-  **EnumSet** :- EnumSet is a special type of Set designed specifically for dealing with enum values. Enums are like lists of named constants (e.g., days of the week, colors).
+
+
+
 
