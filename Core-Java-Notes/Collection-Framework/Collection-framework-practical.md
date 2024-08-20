@@ -150,6 +150,8 @@ In Java, a `Set` is a collection that does not allow duplicate elements. It is p
 
 ### Real-World Use Case
 
+#### 1. Hashset
+
 Imagine you're developing a system that processes user registrations. You want to keep track of all unique user IDs that have signed up. Using a `Set` ensures that no user ID is added more than once.
 
 Here's a simple example to illustrate this:
