@@ -8,6 +8,23 @@
 In stack, elements are stored and accessed in Last In First Out manner. That is, elements are added to the top of the stack and removed from the top of the stack. The Java collections framework has a class named Stack that provides the functionality of the stack data structure.The Stack class extends the Vector class.
 Certainly! Let’s look at a simple use case for a stack in Java. 
 
+Creating a Queue
+You can instantiate a Queue using various implementations. Here are a few common ones:
+
+Using LinkedList:
+
+```java
+Copy code
+Queue<String> queue = new LinkedList<>();
+```
+
+Using PriorityQueue:
+
+```java
+Queue<Integer> priorityQueue = new PriorityQueue<>();
+Common Operations
+```
+
 **Use Case: Undo Functionality in a Text Editor**
 
 Imagine you are building a simple text editor, and you want to add an "Undo" feature. When a user makes changes to the text (e.g., typing, deleting), you want to be able to revert these changes if the user decides to undo them.
