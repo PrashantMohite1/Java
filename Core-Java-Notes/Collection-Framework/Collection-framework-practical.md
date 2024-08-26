@@ -14,7 +14,6 @@ You can instantiate a Queue using various implementations. Here are a few common
 Using LinkedList:
 
 ```java
-Copy code
 Queue<String> queue = new LinkedList<>();
 ```
 
