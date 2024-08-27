@@ -93,5 +93,9 @@ Enumerations or Java Enum serve the purpose of representing a group of named con
 -  **Treeset** :- TreeSet is an implementation of the Set interface that is backed by a TreeMap
 
 
+##### what is Heterogeneous Object and Homogeneous Object
+
+- **Heterogeneous Object:** An object or data structure that contains different types of elements, rather than elements all of the same type.
+- **Homogeneous Object:** In contrast, an object where all elements are of the same type is homogeneous.
 
 
