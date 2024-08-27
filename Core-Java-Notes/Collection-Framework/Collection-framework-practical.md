@@ -238,3 +238,115 @@ In this example:
 
 - Use `HashSet` when you need a collection of unique elements and order doesn’t matter.
 - Use `LinkedHashSet` when you need a collection of unique elements and you want to maintain the order in which elements are inserted.
+
+
+
+
+Certainly! Let's explore `TreeSet` in Java, breaking it down into simple terms and providing real-world use cases with code examples.
+
+### What is `TreeSet`?
+
+- **Definition:** A `TreeSet` is a collection in Java that implements the `NavigableSet` interface and is part of the Java Collections Framework.
+- **Features:**
+  - **Sorted Order:** Elements are stored in a sorted order according to their natural ordering (if they implement `Comparable`) or according to a specified `Comparator`.
+  - **No Duplicates:** It does not allow duplicate elements.
+  - **Performance:** Operations like adding, removing, and checking if an element is present are efficient, typically `O(log n)`.
+
+### How It Works
+
+- **Data Structure:** Internally, `TreeSet` uses a Red-Black tree, which is a type of self-balancing binary search tree. This structure keeps the elements sorted and allows for efficient retrieval, insertion, and deletion.
+- **Ordering:** By default, it uses the natural ordering of elements (like integers or strings). Alternatively, you can provide a custom `Comparator` to define the order.
+
+### Real-World Code Use Cases
+
+#### Use Case 1: Maintaining a Sorted List of Unique Elements
+
+**Scenario:** You need to maintain a list of unique student names in alphabetical order.
+
+**Example Code:**
+
+```java
+import java.util.TreeSet;
+
+public class TreeSetExample {
+    public static void main(String[] args) {
+        TreeSet<String> studentNames = new TreeSet<>();
+
+        // Adding student names
+        studentNames.add("John");
+        studentNames.add("Alice");
+        studentNames.add("Bob");
+        studentNames.add("Alice"); // Duplicate, will not be added
+
+        // Displaying student names in sorted order
+        System.out.println("Student names in sorted order:");
+        for (String name : studentNames) {
+            System.out.println(name);
+        }
+    }
+}
+```
+
+**Output:**
+
+```plaintext
+Student names in sorted order:
+Alice
+Bob
+John
+```
+
+In this example:
+- The names are automatically sorted alphabetically.
+- Duplicates are not allowed, so `"Alice"` is added only once.
+
+#### Use Case 2: Custom Sorting with a Comparator
+
+**Scenario:** You need to maintain a sorted list of integers but in descending order.
+
+**Example Code:**
+
+```java
+import java.util.Comparator;
+import java.util.TreeSet;
+
+public class CustomComparatorExample {
+    public static void main(String[] args) {
+        // Create a TreeSet with a custom comparator for descending order
+        TreeSet<Integer> numbers = new TreeSet<>(Comparator.reverseOrder());
+
+        // Adding numbers
+        numbers.add(10);
+        numbers.add(5);
+        numbers.add(20);
+        numbers.add(15);
+
+        // Displaying numbers in descending order
+        System.out.println("Numbers in descending order:");
+        for (Integer number : numbers) {
+            System.out.println(number);
+        }
+    }
+}
+```
+
+**Output:**
+
+```plaintext
+Numbers in descending order:
+20
+15
+10
+5
+```
+
+In this example:
+- The `TreeSet` is created with a custom `Comparator` that sorts the integers in descending order.
+- The numbers are stored and retrieved in descending order due to the custom comparator.
+
+### Summary
+
+- **`TreeSet`** is ideal when you need a collection of unique elements that are always kept in a sorted order.
+- You can use the default natural ordering or specify a custom order with a `Comparator`.
+- **Performance**: Operations like insertion, deletion, and lookup are efficient due to the underlying Red-Black tree structure.
+
