@@ -27,6 +27,9 @@ Since List is an interface, we cannot create objects from it.
 
 In order to use the functionalities of the List interface, we can use these classes: ArrayList, LinkedList, Vector, Stack
 
+
+### what is binary search tree data type?
+
 #### ArrayList
 ArrayList in Java is a dynamic array implementation that provides a flexible and efficient way to store and manage a list of elements. Here’s how it works under the hood:
 
@@ -102,4 +105,5 @@ Enumerations or Java Enum serve the purpose of representing a group of named con
 - **Heterogeneous Object:** An object or data structure that contains different types of elements, rather than elements all of the same type.
 - **Homogeneous Object:** In contrast, an object where all elements are of the same type is homogeneous.
 
+##### what is tree data type and its type 
 
