@@ -241,9 +241,6 @@ In this example:
 
 
 
-
-Certainly! Let's explore `TreeSet` in Java, breaking it down into simple terms and providing real-world use cases with code examples.
-
 ### `TreeSet`
 
 - **Definition:** A `TreeSet` is a collection in Java that implements the `NavigableSet` interface and is part of the Java Collections Framework.
