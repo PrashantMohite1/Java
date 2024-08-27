@@ -87,7 +87,9 @@ Enumerations or Java Enum serve the purpose of representing a group of named con
 -  **HashSet** :- HashSet is a general-purpose implementation of the Set interface that uses a hash table for storage.
     hashtable reference :- https://www.youtube.com/watch?v=JVdMD3r7dSs&t=323s&pp=ygUPaGFzaGluZyBpbiBqYXZh
    
--  **LinkedHashSet**  :- LinkedHashSet is an implementation of the Set interface that combines the features of HashSet and a linked list.
+-  **LinkedHashSet**
+  LinkedHashSet is an implementation of the Set interface that combines the features of HashSet and a linked list.A LinkedHashSet is similar to HashSet but it maintains the insertion order of the elements uses a doubly linked list to keep track of the order. Each element in the set is linked to the previous and next elements, thus preserving the sequence of insertion.
+  
 -  **Treeset** :- TreeSet is an implementation of the Set interface that is backed by a TreeMap
 
 
