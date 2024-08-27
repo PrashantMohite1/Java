@@ -91,7 +91,8 @@ Enumerations or Java Enum serve the purpose of representing a group of named con
   LinkedHashSet is an implementation of the Set interface that combines the features of HashSet and a linked list.A LinkedHashSet is similar to HashSet but it maintains the insertion order of the elements uses a doubly linked list to keep track of the order. Each element in the set is linked to the previous and next elements, thus preserving the sequence of insertion.
   
 -  **Treeset** :- TreeSet is an implementation of the Set interface that is backed by a TreeMap
-   -   in total collection framework 2 areas where Heterogeneous Object are not allowed - in treeset and tree map.
+    -   The underlying data structure for treeset is Balanced Tree.
+    -   in total collection framework 2 areas where Heterogeneous Object are not allowed - in treeset and tree map.
 
 
 ##### what is Heterogeneous Object and Homogeneous Object
