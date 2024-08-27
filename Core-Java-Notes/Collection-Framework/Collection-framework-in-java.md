@@ -90,7 +90,9 @@ Enumerations or Java Enum serve the purpose of representing a group of named con
 -  **LinkedHashSet**
   LinkedHashSet is an implementation of the Set interface that combines the features of HashSet and a linked list.A LinkedHashSet is similar to HashSet but it maintains the insertion order of the elements uses a doubly linked list to keep track of the order. Each element in the set is linked to the previous and next elements, thus preserving the sequence of insertion.
   
--  **Treeset** :- TreeSet is an implementation of the Set interface that is backed by a TreeMap
+-  **Treeset** :- treeset store unique homogenious elements with sorting order. The default sorting is based on the natural ordering of the elements (like alphabetical order for strings or numerical order for integers). You can also specify a custom order using a Comparator.
+    -  Data Structure: Internally, TreeSet uses a Red-Black tree, which is a type of self-balancing binary search tree. This structure keeps the elements sorted and allows for efficient 
+        retrieval, insertion, and deletion.
     -   The underlying data structure for treeset is Balanced Tree.
     -   in total collection framework 2 areas where Heterogeneous Object are not allowed - in treeset and tree map.
 
