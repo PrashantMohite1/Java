@@ -348,3 +348,115 @@ In this example:
 - You can use the default natural ordering or specify a custom order with a `Comparator`.
 - **Performance**: Operations like insertion, deletion, and lookup are efficient due to the underlying Red-Black tree structure.
 
+# Map 
+
+### 1. **`HashMap`**
+
+- **Characteristics**: 
+  - Stores key-value pairs in a hash table.
+  - Keys are unordered and do not guarantee any specific order.
+  - Allows one null key and multiple null values.
+  - Provides constant-time performance for basic operations (put, get, remove).
+
+- **Use Case**: Best for general-purpose use where order doesn’t matter.
+
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapExample {
+    public static void main(String[] args) {
+        Map<String, String> map = new HashMap<>();
+        
+        // Adding key-value pairs
+        map.put("1", "Apple");
+        map.put("2", "Banana");
+        map.put("3", "Cherry");
+        
+        // Retrieving a value
+        System.out.println("Key 2: " + map.get("2")); // Output: Key 2: Banana
+        
+        // Removing a key-value pair
+        map.remove("1");
+        
+        // Iterating through the map
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
+```
+
+### 2. **`LinkedHashMap`**
+
+- **Characteristics**: 
+  - Extends `HashMap` and maintains insertion order.
+  - Slower than `HashMap` due to maintaining a linked list of entries.
+  - Allows one null key and multiple null values.
+
+- **Use Case**: Useful when you need to preserve the order of elements as they were inserted.
+
+```java
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class LinkedHashMapExample {
+    public static void main(String[] args) {
+        Map<String, String> map = new LinkedHashMap<>();
+        
+        // Adding key-value pairs
+        map.put("1", "Apple");
+        map.put("2", "Banana");
+        map.put("3", "Cherry");
+        
+        // Retrieving a value
+        System.out.println("Key 2: " + map.get("2")); // Output: Key 2: Banana
+        
+        // Removing a key-value pair
+        map.remove("1");
+        
+        // Iterating through the map (insertion order is preserved)
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
+```
+
+### 3. **`TreeMap`**
+
+- **Characteristics**: 
+  - Implements the `SortedMap` interface and sorts keys based on their natural order or a specified comparator.
+  - Does not allow null keys (but allows null values).
+  - Slower than `HashMap` due to sorting.
+
+- **Use Case**: Ideal when you need the keys to be sorted.
+
+```java
+import java.util.Map;
+import java.util.TreeMap;
+
+public class TreeMapExample {
+    public static void main(String[] args) {
+        Map<String, String> map = new TreeMap<>();
+        
+        // Adding key-value pairs
+        map.put("3", "Cherry");
+        map.put("1", "Apple");
+        map.put("2", "Banana");
+        
+        // Retrieving a value
+        System.out.println("Key 2: " + map.get("2")); // Output: Key 2: Banana
+        
+        // Removing a key-value pair
+        map.remove("1");
+        
+        // Iterating through the map (keys are sorted)
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
+```
+
+
