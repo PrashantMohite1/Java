@@ -107,3 +107,33 @@ Enumerations or Java Enum serve the purpose of representing a group of named con
 
 ##### what is tree data type and its type 
 
+
+
+### `Map` Interface
+
+The `Map` interface in Java is a collection that maps keys to values. Each key is unique, and each key maps to exactly one value. Think of it like a dictionary where you look up a word (key) and get its definition (value). 
+
+#### `HashMap`
+
+- **How it works:** `HashMap` uses a technique called hashing to store and retrieve key-value pairs. It distributes the pairs into "buckets" based on the hash code of the key.
+- **Characteristics:**
+  - **No guaranteed order:** The order of entries can be random and may change over time.
+  - **Fast access:** Generally provides constant-time performance for basic operations (like adding, removing, or finding elements).
+- **Use case:** Use `HashMap` when you need a quick look-up and don’t care about the order of the entries.
+
+#### `TreeMap`
+
+- **How it works:** `TreeMap` stores the entries in a sorted order based on the natural ordering of the keys (or by a custom comparator if provided).
+- **Characteristics:**
+  - **Sorted order:** Keys are always kept in ascending order.
+  - **Slower access:** Operations like adding or removing elements can be slower compared to `HashMap` because it needs to maintain the order.
+- **Use case:** Use `TreeMap` when you need the entries to be sorted by key and can afford the extra time for maintaining this order.
+
+#### `LinkedHashMap`
+
+- **How it works:** `LinkedHashMap` maintains a linked list of the entries in the order they were added. It uses a hash table for quick access.
+- **Characteristics:**
+  - **Insertion order:** Entries are iterated in the order they were inserted.
+  - **Moderate access speed:** Slightly slower than `HashMap` due to the overhead of maintaining the linked list, but still generally fast.
+- **Use case:** Use `LinkedHashMap` when you need to maintain the insertion order of entries but still want the fast access provided by `HashMap`.
+
